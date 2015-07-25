@@ -1,0 +1,184 @@
+/* Space out content a bit */
+body {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background: #fff;
+	font-size: 15px;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 300;
+	line-height: 22px;
+	color: #878787;
+}
+
+.main-logo {
+	margin: 0 auto;
+	display: block;
+	height: 300px;
+	background-image: url('../images/egroups.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.tm-block-dark {
+	background-color: #3e3e3e;
+}
+
+.uk-article-title {
+	font-size: 36px;
+	line-height: 42px;
+	font-weight: 300;
+	text-transform: uppercase;
+	color: #666667;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0 0 20px 0;
+	font-family: 'Roboto';
+	font-weight: 300;
+	color: #666667;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.header {
+	padding: 20px;
+}
+
+.header img {
+	position: relative;
+	top: -20px;
+	margin-bottom: -20px;
+}
+
+/* Custom page header */
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: 40px;
+	padding-bottom: 0;
+}
+
+/* Custom page footer */
+.footer {
+	padding-top: 19px;
+	color: #777;
+	border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+	.container {
+		max-width: 730px;
+	}
+}
+
+.container-narrow > hr {
+	margin: 30px 0;
+}
+
+textarea.form-control {
+	height: 100px;
+}
+
+.btn {
+	font-size: 21px;
+	padding: 14px 24px;
+}
+
+.btn-primary, .progress-bar {
+	background-color: #f5b249;
+	color: #ffffff;
+	border-color: #db9b46;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+	background-color: #ffb94c;
+	border-color: #db9b46;
+}
+
+/* Supporting marketing content */
+.marketing {
+	margin: 40px 0;
+}
+
+.marketing p + h4 {
+	margin-top: 28px;
+}
+
+.result {
+	margin-bottom: 10px;
+	padding: 20px;
+}
+
+.find-container .progress {
+	height: 50px;
+}
+
+.find-container .progress-bar {
+	width: 100%;
+}
+
+.find-container .progress-bar span {
+	font-size: 24px;
+	font-weight: bold;
+	opacity: 0.5;
+	line-height: 50px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+	/* Remove the padding we set earlier */
+	.header,
+	.marketing,
+	.footer {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	/* Space out the masthead */
+	.header {
+		margin-bottom: 10px;
+	}
+}
+
+/* Retina Displays */
+/*@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+	.main-logo {
+		background-image: url('../images/logo@2x.png');
+	}
+}*/
+
+#start-a-group {
+	position: relative;
+}
+
+#start-a-group:hover:after, #start-a-group:hover:before {
+	content: '♫';
+	width: 30px;
+	height: 30px;
+	display: block;
+	position: absolute;
+	color: #db9b46;
+	top: 0;
+}
+
+#start-a-group:hover:after {
+	right: -50px;
+}
+
+#start-a-group:hover:before {
+	left: -50px;
+}
+
+input.ng-invalid {
+	background-color: #ffaaaa;
+}

@@ -1,0 +1,8 @@
+{
+  "ROOT_URL": "https://yourchurch.ccbchurch.com/",
+  "AUTH_USERNAME": "YOUR USERNAME",
+  "AUTH_PASSWORD": "YOUR PASSWORD",
+  "EMAIL_SERVICE": "Gmail",
+  "EMAIL_USERNAME": "",
+  "EMAIL_PASSWORD": ""
+}
