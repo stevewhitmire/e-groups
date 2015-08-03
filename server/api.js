@@ -52,9 +52,11 @@ exports.findGroupByID = function(groupID, callback) {
           simplifyXML(item);
           simplifyXML(item.main_leader);
           var udf = item.user_defined_fields.user_defined_field;
-          item.groupType = udf[0].selection[0]._;
-          item.people = udf[1].selection[0]._;
-          item.ageGroup = udf[2] && udf[2].selection[0]._ || 'ANY';
+          if (udf) {
+            item.groupType = udf[0].selection[0]._;
+            item.people = udf[1].selection[0]._;
+            item.ageGroup = udf[2] && udf[2].selection[0]._ || 'ANY';
+          }
           item.address = item.addresses && item.addresses.address && item.addresses.address[0] || false;
           simplifyXML(item.address);
           item.childcareProvided = item.childcare_provided !== 'false';
