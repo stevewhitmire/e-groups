@@ -90,7 +90,7 @@ app.post('/group', function(req, res) {
 	}
 
 	// TODO: Figure out how to look up users in CCB. But until then, hard code the leader to be Abby.
-	data.main_leader_id = 1530;
+	data.main_leader_id = 581;
 
 	data.meeting_location_state = data.meeting_location_state.toUpperCase();
 	switch (data.meeting_location_state) {
