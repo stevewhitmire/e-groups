@@ -19,16 +19,16 @@
 		<h3>
 			e/group
 		</h3>
-		<form-group name="jg-name" label="Name">
+		<form-group name="jg-name" label="Group name">
 			<form-input name="jg-name" model="group.name"></form-input>
 			<form-hint>
-				This is what will appear in our e/groups catalogue.
+				This is what will appear in our e/groups catalog. You don't need to include &rsquo;Elevate&rsquo;, &rsquo;ELC&rsquo;, etc.
 			</form-hint>
 		</form-group>
 		<form-group name="jg-catalogDescription" label="Catalog Description">
 			<form-input name="jg-catalogDescription" model="group.catalogDescription"></form-input>
 			<form-hint>
-				Advertise your group in 50 words or less as you would want it posted in our online catalog.
+				Advertise your group in 75 words or less as you would want it posted in our online catalog.
 			</form-hint>
 		</form-group>
 		<form-group name="jg-generalDescription" label="General Description">
@@ -39,68 +39,54 @@
 		</form-group>
 		<form-group name="jg-type" label="Category">
 			<select ng-model="group.udf_group_pulldown_1_id" id="jg-type" name="jg-type" class="form-control">
-				<option value="1">Activity</option>
-				<option value="2">Discussion</option>
-				<option value="3">Care</option>
-				<option value="4">Code Red</option>
-				<option value="5">NextGen</option>
+				<option value="NONE">Any Kind of Group</option>
+				<option value="1">Encounter (Spiritual Growth)</option>
+				<option value="2">Embrace (Connect with Others)</option>
+				<option value="3">Elevate (Service/Outreach)</option>
 			</select>
 		</form-group>
 		<form-group name="jg-people" label="Who is your e/group for?">
 			<select ng-model="group.udf_group_pulldown_2_id" id="jg-people" class="form-control">
-				<option value="3">Co-ed</option>
-				<option value="1">Men</option>
-				<option value="2">Women</option>
-				<option value="4">Students</option>
+					<option value="NONE">Any People</option>
+					<option value="10">Co-ed</option>
+					<option value="11">Men</option>
+					<option value="12">Women</option>
+					<option value="13">Students</option>
+					<option value="14">Families</option>
+					<option value="15">Children</option>	
+					<option value="16">Couples</option>
 			</select>
 		</form-group>
-		<form-group name="jg-ages" label="Age Range">
-			<select ng-model="group.udf_group_pulldown_3_id" id="jg-ages" class="form-control">
-				<option value="4">Any Age</option>
-				<option value="9">Middle School</option>
-				<option value="10">High School</option>
-				<option value="8">18-24</option>
-				<option value="6">18+</option>
-				<option value="7">Young Adults</option>
-				<option value="5">40+</option>
-			</select>
-		</form-group>
+		<!--<form-group name="jg-ages" label="Age Range">-->
+		<!--	<select ng-model="group.udf_group_pulldown_3_id" id="jg-ages" class="form-control">-->
+		<!--		<option value="4">Any Age</option>-->
+		<!--		<option value="9">Middle School</option>-->
+		<!--		<option value="10">High School</option>-->
+		<!--		<option value="8">18-24</option>-->
+		<!--		<option value="6">18+</option>-->
+		<!--		<option value="7">Young Adults</option>-->
+		<!--		<option value="5">40+</option>-->
+		<!--	</select>-->
+		<!--</form-group>-->
 		<form-group name="jg-when" label="What day will you usually meet?">
 			<select ng-model="group.meeting_day_id" id="jg-when" class="form-control">
-				<option value="1">Varies</option>
-				<option value="4">Sunday</option>
-				<option value="5">Monday</option>
-				<option value="6">Tuesday</option>
-				<option value="7">Wednesday</option>
-				<option value="8">Thursday</option>
-				<option value="9">Friday</option>
-				<option value="10">Saturday</option>
-				<option value="11">Every Other Sunday</option>
-				<option value="12">Every Other Monday</option>
-				<option value="13">Every Other Tuesday</option>
-				<option value="14">Every Other Wednesday</option>
-				<option value="15">Every Other Thursday</option>
-				<option value="16">Every Other Friday</option>
-				<option value="17">Every Other Saturday</option>
-				<option value="18">First Sunday of Every Month</option>
-				<option value="19">First Monday of Every Month</option>
-				<option value="20">First Tuesday of Every Month</option>
-				<option value="21">First Wednesday of Every Month</option>
-				<option value="22">First Thursday of Every Month</option>
-				<option value="23">First Friday of Every Month</option>
-				<option value="24">First Saturday of Every Month</option>
+					<option value="ANY">Any Meeting Day</option>
+					<option value="1">Varies</option>
+					<option value="4">Sunday</option>
+					<option value="5">Monday</option>
+					<option value="6">Tuesday</option>
+					<option value="7">Wednesday</option>
+					<option value="8">Thursday</option>
+					<option value="9">Friday</option>
+					<option value="10">Saturday</option>
 			</select>
 		</form-group>
 		<form-group name="jg-time-id" label="What time of day?">
 			<select ng-model="group.meeting_time_id" id="jg-time-id" class="form-control">
-				<option value="1">Varies</option>
-				<option value="2">Breakfast</option>
-				<option value="3">Morning</option>
-				<option value="4">Lunch</option>
-				<option value="5">Afternoon</option>
-				<option value="6">After Work</option>
-				<option value="7">Dinner</option>
-				<option value="8">Evening</option>
+					<option value="NONE">Any Time</option>
+					<option value="1">Morning</option>
+					<option value="2">Afternoon</option>
+					<option value="3">Evening</option>
 			</select>
 		</form-group>
 		<form-group name="jg-time-start" label="What time will it start?">
