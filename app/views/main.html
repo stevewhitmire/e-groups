@@ -206,6 +206,9 @@
 
 			<dt>Description</dt>
 			<dd>{{ result.description }}</dd>
+			
+			<dt ng-if="result.where">What part of town?</dt>
+			<dd ng-if="result.where">{{ result.where }}</dd>
 
 			<!--<dt ng-if="result.ageGroup">Ages</dt>-->
 			<!--<dd ng-if="result.ageGroup">{{ result.ageGroup }}</dd>-->
