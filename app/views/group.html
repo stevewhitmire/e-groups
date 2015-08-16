@@ -37,11 +37,17 @@
 				Give us an overview of what your group is all about. This will be helpful insight to pair you with a coach.
 			</form-hint>
 		</form-group>
-		<form-group name="jg-type" label="Category">
+		<form-group name="e/Group Type" label="Category">
 			<select ng-model="group.udf_group_pulldown_1_id" id="e/Group Type" name="e/Group Type" class="form-control">
 				<option value="1">Encounter (Spiritual Growth)</option>
 				<option value="2">Embrace (Connect with Others)</option>
 				<option value="3">Elevate (Service/Outreach)</option>
+			</select>
+		</form-group>
+		
+		<form-group name="jg-type" label="Category">
+			<select ng-model="group.udf_group_pulldown_1_id" id="jg-type" name="jg-type" class="form-control">
+				<option value="2">e/Group Fall 2015</option>
 			</select>
 		</form-group>
 		<form-group name="jg-people" label="Who is your e/group for?">
