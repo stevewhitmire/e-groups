@@ -178,14 +178,10 @@ function groupType(id) {
 	id = '' + id;
 	switch (id) {
 		case '1':
-			return 'Activity';
+			return 'Encounter (Spiritual Growth)';
 		case '2':
-			return 'Discussion';
-		case '3':
-			return 'Care';
-		case '4':
-			return 'Code Red';
+			return 'Elevate (Service/Outreach)';
 		default:
-			return 'NextGen';
+			return 'Embrace (Connect with Others)';
 	}
 }
