@@ -117,6 +117,7 @@ textarea.form-control {
 .result {
 	margin-bottom: 10px;
 	padding: 20px;
+	background-color:#666667;
 }
 
 .find-container .progress {
