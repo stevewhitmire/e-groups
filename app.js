@@ -19,6 +19,7 @@ app.use(connect.urlencoded());
 app.post('/query', function(req, res) {
 	var body = _.defaults(req.body || {}, {
 		type: 'NONE',
+		e/Group Type: 'e/Groups Fall 2015'
 		when: 'ANY',
 		time: 'NONE',
 		people: 'NONE',
