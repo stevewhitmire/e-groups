@@ -90,13 +90,13 @@ app.post('/group', function(req, res) {
 		}
 	}
 
-	// TODO: Figure out how to look up users in CCB. But until then, hard code the leader to be Abby.
+	// TODO: Figure out how to look up users in CCB. But until then, hard code the leader to be Brian.
 	data.main_leader_id = 581;
 
 	data.meeting_location_state = data.meeting_location_state.toUpperCase();
 	switch (data.meeting_location_state) {
-		case 'MARYLAND':
-			data.meeting_location_state = 'MD';
+		case 'FLORIDA':
+			data.meeting_location_state = 'FL';
 			break;
 		case 'DELAWARE':
 			data.meeting_location_state = 'DE';
@@ -179,10 +179,13 @@ function groupType(id) {
 	id = '' + id;
 	switch (id) {
 		case '1':
-			return 'Encounter (Spiritual Growth)';
+			return 'Encounter -Spiritual Growth';
 		case '2':
-			return 'Elevate (Service/Outreach)';
+			return 'Embrace -Connect with Others';
+		case '3':
+			return 'Elevate -Service/Outreach';
 		default:
-			return 'Embrace (Connect with Others)';
+			return 'e/Group';
+
 	}
 }
