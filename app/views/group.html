@@ -28,7 +28,7 @@
 		<form-group name="jg-catalogDescription" label="Catalog Description">
 			<form-input name="jg-catalogDescription" model="group.catalogDescription"></form-input>
 			<form-hint>
-				Advertise your group in 75 words or less as you would want it posted in our online catalog.
+				Advertise your group in 80 characters or less as you would want it posted in our online catalog.
 			</form-hint>
 		</form-group>
 		<form-group name="jg-generalDescription" label="General Description">
@@ -97,10 +97,16 @@
 		<form-group name="jg-time-end" label="What time will it end?">
 			<form-input name="jg-time-end" model="group.meeting_time_end"></form-input>
 		</form-group>
-		<form-group name="jg-childcare" label="Is this group child-friendly?">
+		<form-group name="jg-date-meeting" label="What dates will your group meet?">
+			<form-input name="jg-date-meeting" model="group.meeting_date"></form-input>
+		</form-group>
+			<form-group name="jg-coleader" label="Do you have a coleader? Please add name and contact info">
+			<form-input name="jg-coleader" model="group.coleader"></form-input>
+		</form-group>
+		<form-group name="jg-childcare" label="Is childcare provided?">
 			<label>
 				<input ng-model="group.childcare_provided" id="jg-childcare" type="checkbox">
-				Yes, let the children come!
+				Yes!
 			</label>
 		</form-group>
 
