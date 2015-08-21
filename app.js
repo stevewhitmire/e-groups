@@ -117,7 +117,9 @@ app.post('/group', function(req, res) {
 		+ '\n- End Time: ' + data.meeting_time_end
 		+ '\n- Leader Name: ' + data.yourname
 		+ '\n- Leader Email: ' + data.youremail
-		+ '\n- Leader Phone: ' + data.yourphone;
+		+ '\n- Leader Phone: ' + data.yourphone
+		+ '\n- Meeting Dates: ' + data.meeting_date
+		+ '\n- Coleader Info: ' + data.coleader;
 
 	var creator = {
 		name: data.yourname,
